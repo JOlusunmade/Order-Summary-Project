@@ -1,0 +1,114 @@
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+#main {
+  background-color: white;
+  border-radius: 15px;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+/* spacing */
+#title,
+#text,
+#plan,
+#btn,
+#cancellation {
+  margin-top: 2vh;
+}
+
+#headerImage {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+
+#title {
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+#text {
+  color: grey;
+  text-align: center;
+}
+
+#plan {
+  height: 12vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.price {
+  color: grey;
+}
+
+.flex-container {
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+}
+
+#flex1,
+#flex3 {
+  text-align: center;
+  width: 30%;
+}
+
+#flex2 {
+  width: 40%;
+}
+
+a {
+  color: hsl(245, 75%, 52%);
+}
+
+a:hover,
+input[type="button"]:hover,
+#cancellation:hover {
+  cursor: pointer;
+}
+
+#btn {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  box-shadow: hsl(225, 40%, 98%) 0 5px;
+  color: white;
+  height: 7vh;
+  width: 80%;
+}
+
+.btnPosition {
+  text-align: center;
+}
+
+#cancellation {
+  color: rgb(80, 79, 79);
+  text-align: center;
+}
+
+.bold,
+input[type="button"] {
+  font-weight: bold;
+}
+
+/* media queries  */
+@media screen and (min-width: 650px) {
+  body {
+    background-image: url(./pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  #main {
+    max-width: 500px;
+    max-height: 800px;
+  }
+} ;
